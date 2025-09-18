@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Car Racing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="game-wrap">
+    <header>
+      <h1>Mini Car Racing</h1>
+      <div class="hud">
+        <span id="score">Score: 0</span>
+        <span id="speed">Speed: 0</span>
+      </div>
+    </header>
+
+    <main>
+      <canvas id="gameCanvas" width="480" height="720" aria-label="Car racing game"></canvas>
+      <div class="controls">
+        <button id="btnStart">Start</button>
+        <button id="btnPause">Pause</button>
+        <button id="btnRestart">Restart</button>
+      </div>
+    </main>
+
+    <footer>
+      <small>Controls: ← → to steer, ↑ accelerate, ↓ brake. Avoid other cars!</small>
+    </footer>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
